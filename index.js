@@ -1,4 +1,4 @@
 const process =  require('process');
-const { calcChange } = require('./calcChange.js');
+const { calcChange } = require('./calc-change.js');
 
 const { itemCost, payment } = calcChange(process.argv);
