@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Adam-Robson/command-line-change/issues"
   },
-  "homepage": "https://github.com/Adam-Robson/command-line-change#readme"
+  "homepage": "https://github.com/Adam-Robson/command-line-change#readme",
+  "dependencies": {
+    "jsdoc": "^4.0.0"
+  }
 }
