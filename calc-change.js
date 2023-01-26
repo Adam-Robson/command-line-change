@@ -67,23 +67,13 @@ const calcChange = (argv) => {
   
   let coinChange = change - changeInteger;
 
-/**
- * Round the decimal to two places.
- */
 
   let twoDecimals = coinChange.toFixed(2);
   
   let changeAmount = Number(twoDecimals);
   
-/**
- * Add the rounded decimal and the integer together to get the total change due. 
- */
 
   const realChangeAmount = changeInteger + changeAmount;
-
-/** 
- * Convert the amount tendered back to a string for the output concatenation. 
- */
 
   let amountPaid = pay.toString(); 
 
