@@ -12,7 +12,7 @@ const calcChange = (argv) => {
 
   let itemCost = null;
   let payment = null;
-  
+  let helpFlag = null;
 /** 
  *  Reassign the variables itemCost and payment to the value of the item that FOLLOWS the identified match.  
  */
@@ -22,9 +22,12 @@ const calcChange = (argv) => {
       itemCost = argv[i + 1];
       ++i;
     }
-    if (process.argv[i] === '--payment') {
-      payment = process.argv[i + 1];
+    if (argv[i] === '--payment') {
+      payment = argv[i + 1];
       ++i;
+    }
+    if (argv[i] === '--help') {
+      console.message('To use this command line interface, pass the following flags: --item-cost (followed by the cost of the item you want to purchase), and --payment (followed by the amount you will tender for the item you wish to purchase.  The program will provide the amount of money that should be returned as change in response, including the number of dollars, quarters, dimes, nickels and pennies. Thank you for using command line change.')
     }
   }
 
